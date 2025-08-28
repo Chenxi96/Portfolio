@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&family=VT323&display=swap');
+
+/******************************
+* 1. GENERAL/DEFAULT STYLES
+* 2. HEADER
+* 3. MAIN CONTENT
+* 4. FOOTER
+*******************************/
+
+/* 1. GENERAL/DEFAULT STYLES */
+:root {
+    --background-color: #363636;
+}
+
+* {
+    color: #FFFFFF;
+}
+
+
+body {
+    font-family: "Urbanist", sans-serif;
+    background-color: #303030;
+    margin: 0 40px;
+}
+
+li {
+    list-style: none;
+    border-radius: 8px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+a:hover {
+    color: #FFFFFF;
+    text-shadow: 
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+textarea {
+    resize: none;
+}
+
+.social-icon > a {
+    border: 1px solid transparent;
+    border-radius: 8px;
+    display: block;
+    background-color: var(--background-color);
+}
+
+.social-icon > a:hover {
+    border: 1px solid black;
+}
+
+/* 2. HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+ul {
+    display: flex;
+    column-gap: 67.5px;
+}
+
+/* 3. MAIN CONTENT */
+
+main {
+    border-radius: 8px;
+}
+
+.MyPicture {
+    width: 41%;
+}
+
+.hero-wrapper > p {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 109px;
+}
+
+.work-container::before {
+    content: "";
+    display: block;
+    padding-top: 62px;
+    width: 100%;
+    position: relative;
+    border-top: 4px solid var(--background-color);
+    margin-top: 73px;
+}
+
+.work-container > h2 {
+    width: 100%;
+    background-color: var(--background-color);
+    margin: 0;
+    text-align: center;
+    padding-top: 27px;
+    border-radius: 10px 10px 0 0;
+}
+
+.work-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--background-color);
+    margin: 0 0 37px 0;
+    padding: 20px 0 20px 0;
+    justify-content: center;
+    gap: 50px 23px;
+    border-radius: 0 0 10px 10px;
+}
+
+.card-container {
+    padding-bottom: 137px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    font-size: 18px;
+    width: 40%;
+}
+
+.card-container > img {
+    width: 100%;
+}
+
+.card-container > p {
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-container > h3 {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 36px;
+}
+
+
+/* 4. FOOTER */
+footer {
+    background-color: var(--background-color);
+    border-radius: 8px;
+}
+
+footer > h2 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    padding-top: 42px;
+}
+
+form {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    max-width: 316px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    margin-top: 12px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #303030;
+    align-items: center;
+}
+
+.submit-btn {
+    margin: 25px auto 42px auto;
+    padding: 23px 71px;
+    border-radius: 8px;
+    border-width: 1px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer-container > p {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px){
+
+    h1 {
+        margin: 15px;
+        text-align: center;
+        margin-bottom: 297px;
+        font-size: 42px;
+    }
+
+    h3 {
+        margin: 27px 0 27px 0;
+    }
+
+    .line-break-p::before {
+        display: none;
+    }
+
+    .logo {
+        font-size: clamp(30px, 2vw, 45px);
+        margin: 0;
+    }
+
+    .hero-wrapper > p {
+        margin-bottom: 49px;
+        font-size: 42px;
+        text-align: center;
+    }
+
+    ul {
+        column-gap: 2vw;
+    }
+    
+    .MyPicture {
+        position: absolute;
+        width: 29vw;
+    }
+
+    .card-container {
+        padding-bottom: 75px;
+    }
+
+    .card-container > p {
+        width: 173px;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+    body{
+        margin: 0;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        padding: 0;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    h1 {
+        margin-bottom: 60px;
+        font-size: 30px;
+    }
+
+    .hero-wrapper > p{
+        font-size: 30px;
+    }
+
+    .MyPicture {
+        display: none;
+    }
+
+    nav {
+        margin: 32px 0 24px 0;
+    }
+
+    ul{
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    .card-container {
+        width: 82%;
+    }
+
+    .work-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        margin: 0 20px;
+    }
+
+    .submit-btn {
+        margin: 25px 0 42px 0;
+    }
+
+    .footer-container {
+        display: flex;
+        position: relative;
+        flex-direction: column-reverse;
+    }
+
+    .footer-container > p {
+        text-align: center;
+    }
+
+    .footer-container > div {
+        width: 100%;
+    }
+
+    ul {
+        justify-content: space-around;
+    }
+
+    .social-icon {
+        margin: 0;
+    }
+}
