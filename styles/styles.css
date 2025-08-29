@@ -33,6 +33,7 @@ a {
     font-size: 1.5em;
     font-weight: 700;
     color: #FFFFFF;
+    padding: 0 32px;
 }
 
 a:hover {
@@ -75,11 +76,8 @@ ul {
 /* 3. MAIN CONTENT */
 
 main {
+    margin: 0 140px;
     border-radius: 8px;
-}
-
-.MyPicture {
-    width: 41%;
 }
 
 .hero-wrapper > p {
@@ -88,22 +86,13 @@ main {
     margin-bottom: 109px;
 }
 
-.work-container::before {
-    content: "";
-    display: block;
-    padding-top: 62px;
-    width: 100%;
-    position: relative;
-    border-top: 4px solid var(--background-color);
-    margin-top: 73px;
-}
-
 .work-container > h2 {
     width: 100%;
     background-color: var(--background-color);
+    font-size: 40px;
     margin: 0;
     text-align: center;
-    padding-top: 27px;
+    padding: 60px 0 32px 0;
     border-radius: 10px 10px 0 0;
 }
 
@@ -112,15 +101,17 @@ main {
     flex-wrap: wrap;
     background-color: var(--background-color);
     margin: 0 0 37px 0;
-    padding: 20px 0 20px 0;
+    padding: 20px 0 83px 0;
     justify-content: center;
     gap: 50px 23px;
     border-radius: 0 0 10px 10px;
 }
 
 .card-container {
-    padding-bottom: 137px;
-    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #434343;
     border-radius: 8px;
     font-size: 18px;
     width: 40%;
@@ -128,6 +119,7 @@ main {
 
 .card-container > img {
     width: 100%;
+    border-radius: 8px;
 }
 
 .card-container > p {
@@ -137,7 +129,7 @@ main {
 
 .card-container > h3 {
     text-align: center;
-    font-size: 18px;
+    font-size: 32px;
     margin-top: 36px;
 }
 
