@@ -54,6 +54,7 @@ textarea {
     border-radius: 8px;
     display: block;
     background-color: var(--background-color);
+    padding: 0;
 }
 
 .social-icon > a:hover {
@@ -165,6 +166,7 @@ label {
     row-gap: 12px;
     margin-top: 12px;
 }
+
 
 .footer-container {
     display: flex;
