@@ -21,8 +21,8 @@ const Editor = ({value}: {value: any}) => {
   }, [quill, value])
 
   return (
-    <div style={{ width: "auto", height: "auto" }}>
-      <div ref={quillRef} />
+    <div className="col card" style={{ width: "max-content"}}>
+      <div  ref={quillRef} />
     </div>
   );
 };

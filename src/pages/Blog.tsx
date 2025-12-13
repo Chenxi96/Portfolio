@@ -27,15 +27,12 @@ const Blog = () => {
 
     return (
         <section className="container">
-            <div className="row">
-                {blogs && blogs.map(({body}, key) => {
+            <div className="row gap-2">
+                {blogs && blogs.map(({body}) => {
                     return (
-                        <div  className="col" key={key}>
                             <Editor
                                 value={body}
                             />
-                        </div>
-                        
                     )
                 })}
             </div>
