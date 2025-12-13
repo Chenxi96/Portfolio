@@ -1,6 +1,6 @@
 import Header from './components/header/Header';
 import Home from './pages/Home';
-import AboutMe from './pages/AboutMe';
+// import AboutMe from './pages/AboutMe';
 import Footer from './components/footer/Footer';
 import Blog from './pages/Blog';
 

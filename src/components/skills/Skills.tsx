@@ -26,7 +26,7 @@ const Skills = () => {
             <div className="row gap-2 justify-content-center">
                 {skills && skills.map(({body, title, image}, key) => {
                     return (
-                        <div className="card" style={{ width: "10rem", padding: "1em 0 0 0"}}>
+                        <div key={key} className="card" style={{ width: "10rem", padding: "1em 0 0 0"}}>
                             <img style={{ width: "2rem", margin: "auto"}} src={image} className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title text-center">{title}</h5>

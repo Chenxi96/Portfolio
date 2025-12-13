@@ -1,7 +1,6 @@
 import Editor from "../components/editor/Editor";
-import { useQuill } from 'react-quilljs';
 
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect } from "react"
 
 
 interface blogs {
@@ -31,7 +30,7 @@ const Blog = () => {
             <div className="row">
                 {blogs && blogs.map(({body}, key) => {
                     return (
-                        <div className="col" key={key}>
+                        <div  className="col" key={key}>
                             <Editor
                                 value={body}
                             />

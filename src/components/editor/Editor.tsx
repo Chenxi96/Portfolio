@@ -1,13 +1,10 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 import { useQuill } from 'react-quilljs';
-// or const { useQuill } = require('react-quilljs');
 
-import 'quill/dist/quill.snow.css'; // Add css for snow theme
-// or import 'quill/dist/quill.bubble.css'; // Add css for bubble theme
 
 const Editor = ({value}: {value: any}) => {
-  const { quill, quillRef } = useQuill({
+  const { quill } = useQuill({
     modules: {
         toolbar: null
     },
@@ -25,7 +22,7 @@ const Editor = ({value}: {value: any}) => {
 
   return (
     <div style={{ width: "auto", height: "auto" }}>
-      <div ref={quillRef} />
+      <div  />
     </div>
   );
 };
