@@ -4,7 +4,7 @@ import { useQuill } from 'react-quilljs';
 
 
 const Editor = ({value}: {value: any}) => {
-  const { quill } = useQuill({
+  const { quill, quillRef } = useQuill({
     modules: {
         toolbar: null
     },
@@ -22,7 +22,7 @@ const Editor = ({value}: {value: any}) => {
 
   return (
     <div style={{ width: "auto", height: "auto" }}>
-      <div  />
+      <div ref={quillRef} />
     </div>
   );
 };
